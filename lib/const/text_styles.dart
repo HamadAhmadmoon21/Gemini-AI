@@ -5,4 +5,5 @@ class ConstantTextStyle{
       fontWeight: FontWeight.bold);
 }
 
+const String apikey='AIzaSyBp5CEwogah9l_IabICvWuvxYaqojOEObo';
 

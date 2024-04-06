@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: const Text('Generative AI', style: ConstantTextStyle.appBar),
+        title: const Text('Gemini AI', style: ConstantTextStyle.appBar),
         centerTitle: true,
       ),
       body: Padding(
@@ -119,7 +119,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       Expanded(child: HomeTextField(controller: controller)),
-                      IconButton(
+
+                     //if loading then don't display iconButton otherwise display it
+                     isLoading?const SizedBox(): IconButton(
                         icon: isLoading
                             ? const SizedBox()
                             : const Icon(Icons.send),
